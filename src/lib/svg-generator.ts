@@ -26,13 +26,22 @@ export function generateUniverseSVG(user: UserProfile, planets: PlanetData[]): s
     const glowColor = moodColors[planet.mood] || "#ffffff";
 
     // Calculate HUD timing for this planet
-    // It shows up from (index * cycleDuration) to ((index + 1) * cycleDuration)
     const start = index * cycleDuration;
     const end = start + cycleDuration;
+
+    // Unique gradient ID for this planet
+    const gradId = `planetGrad-${index}`;
 
     return `
       <!-- Planet: ${planet.name} -->
       <a href="${planet.html_url}" target="_blank" style="cursor: pointer;">
+        <defs>
+          <radialGradient id="${gradId}" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="${planet.color}" stop-opacity="1" />
+            <stop offset="50%" stop-color="${planet.color}" stop-opacity="0.8" />
+            <stop offset="100%" stop-color="#000" stop-opacity="1" />
+          </radialGradient>
+        </defs>
         <g>
           <!-- Orbit Path -->
           <circle cx="${cx}" cy="${cy}" r="${planet.orbitRadius}" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
@@ -48,23 +57,31 @@ export function generateUniverseSVG(user: UserProfile, planets: PlanetData[]): s
               repeatCount="indefinite" 
             />
             
-            <!-- Planet Body -->
-            <circle cx="${cx + planet.orbitRadius}" cy="${cy}" r="${planet.radius}" fill="${planet.color}">
+            <!-- Planet Body (3D Effect) -->
+            <circle cx="${cx + planet.orbitRadius}" cy="${cy}" r="${planet.radius}" fill="url(#${gradId})">
                <title>${planet.name} (${planet.language})</title>
+            </circle>
+            
+            <!-- Inner Rim Light (Atmosphere) -->
+            <circle cx="${cx + planet.orbitRadius}" cy="${cy}" r="${planet.radius}" fill="none" stroke="${glowColor}" stroke-width="2" opacity="0.3">
             </circle>
             
             <!-- Texture/Overlay -->
             ${planet.texture === 'ringed' ? `
-              <ellipse cx="${cx + planet.orbitRadius}" cy="${cy}" rx="${planet.radius * 1.4}" ry="${planet.radius * 0.4}" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2" transform="rotate(-15, ${cx + planet.orbitRadius}, ${cy})" />
+              <ellipse cx="${cx + planet.orbitRadius}" cy="${cy}" rx="${planet.radius * 1.6}" ry="${planet.radius * 0.4}" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" transform="rotate(-15, ${cx + planet.orbitRadius}, ${cy})" />
+            ` : ''}
+            
+            ${planet.texture === 'cracked' ? `
+               <path d="M${cx + planet.orbitRadius - 5} ${cy - 5} L${cx + planet.orbitRadius + 5} ${cy + 5} M${cx + planet.orbitRadius + 2} ${cy - 8} L${cx + planet.orbitRadius - 2} ${cy + 2}" stroke="rgba(0,0,0,0.3)" stroke-width="1" />
             ` : ''}
             
             <!-- Mood Glow -->
-            <circle cx="${cx + planet.orbitRadius}" cy="${cy}" r="${planet.radius}" fill="none" stroke="${glowColor}" stroke-width="2" opacity="0.6">
-              <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite" />
+            <circle cx="${cx + planet.orbitRadius}" cy="${cy}" r="${planet.radius * 1.2}" fill="none" stroke="${glowColor}" stroke-width="1" opacity="0.4" filter="url(#glow)">
+              <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
             </circle>
 
             <!-- Active Indicator (Ring when HUD is showing this planet) -->
-            <circle cx="${cx + planet.orbitRadius}" cy="${cy}" r="${planet.radius + 8}" fill="none" stroke="white" stroke-width="2" stroke-dasharray="4 4" opacity="0">
+            <circle cx="${cx + planet.orbitRadius}" cy="${cy}" r="${planet.radius + 10}" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
                <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;${start / totalCycleTime};${end / totalCycleTime};1" dur="${totalCycleTime}s" repeatCount="indefinite" />
                <animateTransform attributeName="transform" type="rotate" from="0 ${cx + planet.orbitRadius} ${cy}" to="360 ${cx + planet.orbitRadius} ${cy}" dur="10s" repeatCount="indefinite" />
             </circle>
@@ -157,6 +174,9 @@ export function generateUniverseSVG(user: UserProfile, planets: PlanetData[]): s
   <!-- Background -->
   <rect width="100%" height="100%" fill="#030014" />
   
+  <!-- Copyright Watermark -->
+  <text x="${width / 2}" y="${height / 2 + 150}" text-anchor="middle" fill="white" opacity="0.05" font-family="Arial, sans-serif" font-size="40" font-weight="bold">© ${user.name}</text>
+  
   <!-- Stars -->
   <circle cx="100" cy="100" r="1" fill="white" opacity="0.5" />
   <circle cx="500" cy="200" r="1.5" fill="white" opacity="0.7" />
@@ -174,7 +194,7 @@ export function generateUniverseSVG(user: UserProfile, planets: PlanetData[]): s
     <image href="${user.avatarUrl}" x="${cx - 40}" y="${cy - 40}" height="80" width="80" clip-path="circle(40px at center)" opacity="0.8" />
   </g>
   
-  <!-- User Name -->
+  <!-- User Name (Center) -->
   <text x="${cx}" y="${cy + 60}" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">${user.name}</text>
   <text x="${cx}" y="${cy + 75}" text-anchor="middle" fill="#aaa" font-family="Arial, sans-serif" font-size="10">@${user.username}</text>
 
@@ -189,6 +209,12 @@ export function generateUniverseSVG(user: UserProfile, planets: PlanetData[]): s
 
   <!-- Footer -->
   <text x="${width - 10}" y="${height - 10}" text-anchor="end" fill="#333" font-family="Arial, sans-serif" font-size="10">RepoVerse</text>
+  
+  <!-- Top-Right User Badge -->
+  <g transform="translate(${width - 70}, 20)">
+    <circle cx="25" cy="25" r="27" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <image href="${user.avatarUrl}" x="0" y="0" height="50" width="50" clip-path="circle(25px at center)" />
+  </g>
 </svg>
   `.trim();
 }

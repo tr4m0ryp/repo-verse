@@ -85,6 +85,22 @@ export function generateUniverseSVG(user: UserProfile, planets: PlanetData[]): s
                <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;${start / totalCycleTime};${end / totalCycleTime};1" dur="${totalCycleTime}s" repeatCount="indefinite" />
                <animateTransform attributeName="transform" type="rotate" from="0 ${cx + planet.orbitRadius} ${cy}" to="360 ${cx + planet.orbitRadius} ${cy}" dur="10s" repeatCount="indefinite" />
             </circle>
+
+            <!-- Hover Label (Counter-Rotated to stay upright) -->
+            <g opacity="0">
+              <set attributeName="opacity" to="1" begin="mouseover" end="mouseout" />
+              <animateTransform 
+                  attributeName="transform" 
+                  type="rotate" 
+                  from="360 ${cx + planet.orbitRadius} ${cy}" 
+                  to="0 ${cx + planet.orbitRadius} ${cy}" 
+                  dur="${duration}s" 
+                  repeatCount="indefinite" 
+              />
+              <text x="${cx + planet.orbitRadius}" y="${cy + planet.radius + 15}" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
+                ${planet.name}
+              </text>
+            </g>
           </g>
         </g>
       </a>

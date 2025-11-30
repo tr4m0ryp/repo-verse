@@ -427,12 +427,12 @@
             />
             
             <!-- Planet Body (3D Effect) -->
-            <circle cx="820" cy="300" r="44.47125135508661" fill="url(#planetGrad-5)">
+            <circle cx="820" cy="300" r="44.515646018383464" fill="url(#planetGrad-5)">
                <title>nimaldanyathk (null)</title>
             </circle>
             
             <!-- Inner Rim Light (Atmosphere) -->
-            <circle cx="820" cy="300" r="44.47125135508661" fill="none" stroke="#FF00E6" stroke-width="2" opacity="0.3">
+            <circle cx="820" cy="300" r="44.515646018383464" fill="none" stroke="#FF00E6" stroke-width="2" opacity="0.3">
             </circle>
             
             <!-- Texture/Overlay -->
@@ -441,12 +441,12 @@
             
             
             <!-- Mood Glow -->
-            <circle cx="820" cy="300" r="53.36550162610393" fill="none" stroke="#FF00E6" stroke-width="1" opacity="0.4" filter="url(#glow)">
+            <circle cx="820" cy="300" r="53.418775222060155" fill="none" stroke="#FF00E6" stroke-width="1" opacity="0.4" filter="url(#glow)">
               <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
             </circle>
 
             <!-- Active Indicator (Ring when HUD is showing this planet) -->
-            <circle cx="820" cy="300" r="54.47125135508661" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
+            <circle cx="820" cy="300" r="54.515646018383464" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
                <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.5;0.6;1" dur="40s" repeatCount="indefinite" />
                <animateTransform attributeName="transform" type="rotate" from="0 820 300" to="360 820 300" dur="10s" repeatCount="indefinite" />
             </circle>
@@ -462,7 +462,7 @@
                   dur="16.129032258064516s" 
                   repeatCount="indefinite" 
               />
-              <text x="820" y="359.4712513550866" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
+              <text x="820" y="359.51564601838345" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
                 nimaldanyathk
               </text>
             </g>
@@ -636,12 +636,12 @@
             />
             
             <!-- Planet Body (3D Effect) -->
-            <circle cx="1000" cy="300" r="35.03190588228877" fill="url(#planetGrad-8)">
+            <circle cx="1000" cy="300" r="35.31783642170174" fill="url(#planetGrad-8)">
                <title>repo-verse (TypeScript)</title>
             </circle>
             
             <!-- Inner Rim Light (Atmosphere) -->
-            <circle cx="1000" cy="300" r="35.03190588228877" fill="none" stroke="#00FF94" stroke-width="2" opacity="0.3">
+            <circle cx="1000" cy="300" r="35.31783642170174" fill="none" stroke="#00FF94" stroke-width="2" opacity="0.3">
             </circle>
             
             <!-- Texture/Overlay -->
@@ -650,12 +650,12 @@
             
             
             <!-- Mood Glow -->
-            <circle cx="1000" cy="300" r="42.03828705874652" fill="none" stroke="#00FF94" stroke-width="1" opacity="0.4" filter="url(#glow)">
+            <circle cx="1000" cy="300" r="42.381403706042086" fill="none" stroke="#00FF94" stroke-width="1" opacity="0.4" filter="url(#glow)">
               <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
             </circle>
 
             <!-- Active Indicator (Ring when HUD is showing this planet) -->
-            <circle cx="1000" cy="300" r="45.03190588228877" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
+            <circle cx="1000" cy="300" r="45.31783642170174" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
                <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.8;0.9;1" dur="40s" repeatCount="indefinite" />
                <animateTransform attributeName="transform" type="rotate" from="0 1000 300" to="360 1000 300" dur="10s" repeatCount="indefinite" />
             </circle>
@@ -671,7 +671,7 @@
                   dur="12.5s" 
                   repeatCount="indefinite" 
               />
-              <text x="1000" y="350.03190588228875" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
+              <text x="1000" y="350.3178364217017" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
                 repo-verse
               </text>
             </g>
@@ -841,7 +841,7 @@
         <!-- Panel Content -->
         <text x="20" y="520" fill="#FF00E6" font-family="Courier New, monospace" font-size="16" font-weight="bold">> nimaldanyathk</text>
         <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: N/A | STARS: 1</text>
-        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: ENERGETIC | SIZE: 3488kb</text>
+        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: ENERGETIC | SIZE: 3540kb</text>
         
         <!-- Progress Bar -->
         <rect x="20" y="565" width="0" height="2" fill="#FF00E6">
@@ -889,7 +889,7 @@
         <!-- Panel Content -->
         <text x="20" y="520" fill="#00FF94" font-family="Courier New, monospace" font-size="16" font-weight="bold">> repo-verse</text>
         <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: TypeScript | STARS: 0</text>
-        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: FOCUSED | SIZE: 150kb</text>
+        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: FOCUSED | SIZE: 165kb</text>
         
         <!-- Progress Bar -->
         <rect x="20" y="565" width="0" height="2" fill="#00FF94">

@@ -30,7 +30,7 @@
   <rect width="100%" height="100%" fill="#030014" />
   
   <!-- Copyright Watermark -->
-  <text x="400" y="450" text-anchor="middle" fill="white" opacity="0.1" font-family="Arial, sans-serif" font-size="40" font-weight="bold">© Linus Torvalds</text>
+  <text x="400" y="450" text-anchor="middle" fill="white" opacity="0.1" font-family="Arial, sans-serif" font-size="40" font-weight="bold">© Moussa Ouallaf</text>
   
   <!-- Stars -->
   <circle cx="100" cy="100" r="1" fill="white" opacity="0.5" />
@@ -46,21 +46,21 @@
     <circle cx="400" cy="300" r="40" fill="url(#sunGradient)">
       <animate attributeName="r" values="40;42;40" dur="4s" repeatCount="indefinite" />
     </circle>
-    <image href="https://avatars.githubusercontent.com/u/1024025?v=4" xlink:href="https://avatars.githubusercontent.com/u/1024025?v=4" x="360" y="260" height="80" width="80" clip-path="url(#sunClip)" opacity="0.8" />
+    <image href="https://avatars.githubusercontent.com/u/175369445?v=4" xlink:href="https://avatars.githubusercontent.com/u/175369445?v=4" x="360" y="260" height="80" width="80" clip-path="url(#sunClip)" opacity="0.8" />
   </g>
   
   <!-- User Name (Center) -->
-  <text x="400" y="360" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Linus Torvalds</text>
-  <text x="400" y="375" text-anchor="middle" fill="#aaa" font-family="Arial, sans-serif" font-size="10">@torvalds</text>
+  <text x="400" y="360" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Moussa Ouallaf</text>
+  <text x="400" y="375" text-anchor="middle" fill="#aaa" font-family="Arial, sans-serif" font-size="10">@tr4m0ryp</text>
 
   <!-- Planets -->
   
-      <!-- Planet: linux -->
-      <a href="https://github.com/torvalds/linux" target="_blank" style="cursor: pointer;">
+      <!-- Planet: DataScraper_GoogleMaps -->
+      <a href="https://github.com/tr4m0ryp/DataScraper_GoogleMaps" target="_blank" style="cursor: pointer;">
         <defs>
           <radialGradient id="planetGrad-0" cx="30%" cy="30%" r="70%">
-            <stop offset="0%" stop-color="#808080" stop-opacity="1" />
-            <stop offset="50%" stop-color="#808080" stop-opacity="0.8" />
+            <stop offset="0%" stop-color="#3776AB" stop-opacity="1" />
+            <stop offset="50%" stop-color="#3776AB" stop-opacity="0.8" />
             <stop offset="100%" stop-color="#000" stop-opacity="1" />
           </radialGradient>
         </defs>
@@ -80,29 +80,27 @@
             />
             
             <!-- Planet Body (3D Effect) -->
-            <circle cx="520" cy="300" r="60" fill="url(#planetGrad-0)">
-               <title>linux (C)</title>
+            <circle cx="520" cy="300" r="27.19368581839511" fill="url(#planetGrad-0)">
+               <title>DataScraper_GoogleMaps (Python)</title>
             </circle>
             
             <!-- Inner Rim Light (Atmosphere) -->
-            <circle cx="520" cy="300" r="60" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.3">
+            <circle cx="520" cy="300" r="27.19368581839511" fill="none" stroke="#00C2FF" stroke-width="2" opacity="0.3">
             </circle>
             
             <!-- Texture/Overlay -->
-            
-              <ellipse cx="520" cy="300" rx="96" ry="24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" transform="rotate(-15, 520, 300)" />
             
             
             
             
             <!-- Mood Glow -->
-            <circle cx="520" cy="300" r="72" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.4" filter="url(#glow)">
+            <circle cx="520" cy="300" r="32.63242298207413" fill="none" stroke="#00C2FF" stroke-width="1" opacity="0.4" filter="url(#glow)">
               <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
             </circle>
 
             <!-- Active Indicator (Ring when HUD is showing this planet) -->
-            <circle cx="520" cy="300" r="70" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
-               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0;0.1111111111111111;1" dur="36s" repeatCount="indefinite" />
+            <circle cx="520" cy="300" r="37.19368581839511" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
+               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0;0.1;1" dur="40s" repeatCount="indefinite" />
                <animateTransform attributeName="transform" type="rotate" from="0 520 300" to="360 520 300" dur="10s" repeatCount="indefinite" />
             </circle>
 
@@ -117,8 +115,8 @@
                   dur="31.25s" 
                   repeatCount="indefinite" 
               />
-              <text x="520" y="375" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
-                linux
+              <text x="520" y="342.1936858183951" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
+                DataScraper_GoogleMaps
               </text>
             </g>
           </g>
@@ -126,8 +124,8 @@
       </a>
     
 
-      <!-- Planet: uemacs -->
-      <a href="https://github.com/torvalds/uemacs" target="_blank" style="cursor: pointer;">
+      <!-- Planet: Bulk_Email_Sender -->
+      <a href="https://github.com/tr4m0ryp/Bulk_Email_Sender" target="_blank" style="cursor: pointer;">
         <defs>
           <radialGradient id="planetGrad-1" cx="30%" cy="30%" r="70%">
             <stop offset="0%" stop-color="#808080" stop-opacity="1" />
@@ -151,29 +149,27 @@
             />
             
             <!-- Planet Body (3D Effect) -->
-            <circle cx="580" cy="300" r="38.246656731129335" fill="url(#planetGrad-1)">
-               <title>uemacs (C)</title>
+            <circle cx="580" cy="300" r="20" fill="url(#planetGrad-1)">
+               <title>Bulk_Email_Sender (null)</title>
             </circle>
             
             <!-- Inner Rim Light (Atmosphere) -->
-            <circle cx="580" cy="300" r="38.246656731129335" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.3">
+            <circle cx="580" cy="300" r="20" fill="none" stroke="#FF00E6" stroke-width="2" opacity="0.3">
             </circle>
             
             <!-- Texture/Overlay -->
-            
-              <ellipse cx="580" cy="300" rx="61.19465076980694" ry="15.298662692451735" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" transform="rotate(-15, 580, 300)" />
             
             
             
             
             <!-- Mood Glow -->
-            <circle cx="580" cy="300" r="45.8959880773552" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.4" filter="url(#glow)">
+            <circle cx="580" cy="300" r="24" fill="none" stroke="#FF00E6" stroke-width="1" opacity="0.4" filter="url(#glow)">
               <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
             </circle>
 
             <!-- Active Indicator (Ring when HUD is showing this planet) -->
-            <circle cx="580" cy="300" r="48.246656731129335" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
-               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1111111111111111;0.2222222222222222;1" dur="36s" repeatCount="indefinite" />
+            <circle cx="580" cy="300" r="30" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
+               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.2;1" dur="40s" repeatCount="indefinite" />
                <animateTransform attributeName="transform" type="rotate" from="0 580 300" to="360 580 300" dur="10s" repeatCount="indefinite" />
             </circle>
 
@@ -188,8 +184,8 @@
                   dur="26.31578947368421s" 
                   repeatCount="indefinite" 
               />
-              <text x="580" y="353.24665673112935" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
-                uemacs
+              <text x="580" y="335" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
+                Bulk_Email_Sender
               </text>
             </g>
           </g>
@@ -197,12 +193,12 @@
       </a>
     
 
-      <!-- Planet: GuitarPedal -->
-      <a href="https://github.com/torvalds/GuitarPedal" target="_blank" style="cursor: pointer;">
+      <!-- Planet: AI-Powered-Web-Scraper -->
+      <a href="https://github.com/tr4m0ryp/AI-Powered-Web-Scraper" target="_blank" style="cursor: pointer;">
         <defs>
           <radialGradient id="planetGrad-2" cx="30%" cy="30%" r="70%">
-            <stop offset="0%" stop-color="#808080" stop-opacity="1" />
-            <stop offset="50%" stop-color="#808080" stop-opacity="0.8" />
+            <stop offset="0%" stop-color="#3776AB" stop-opacity="1" />
+            <stop offset="50%" stop-color="#3776AB" stop-opacity="0.8" />
             <stop offset="100%" stop-color="#000" stop-opacity="1" />
           </radialGradient>
         </defs>
@@ -222,12 +218,12 @@
             />
             
             <!-- Planet Body (3D Effect) -->
-            <circle cx="640" cy="300" r="45.925127198341414" fill="url(#planetGrad-2)">
-               <title>GuitarPedal (OpenSCAD)</title>
+            <circle cx="640" cy="300" r="25.83773044716594" fill="url(#planetGrad-2)">
+               <title>AI-Powered-Web-Scraper (Python)</title>
             </circle>
             
             <!-- Inner Rim Light (Atmosphere) -->
-            <circle cx="640" cy="300" r="45.925127198341414" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.3">
+            <circle cx="640" cy="300" r="25.83773044716594" fill="none" stroke="#00C2FF" stroke-width="2" opacity="0.3">
             </circle>
             
             <!-- Texture/Overlay -->
@@ -236,13 +232,13 @@
             
             
             <!-- Mood Glow -->
-            <circle cx="640" cy="300" r="55.110152638009694" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.4" filter="url(#glow)">
+            <circle cx="640" cy="300" r="31.005276536599126" fill="none" stroke="#00C2FF" stroke-width="1" opacity="0.4" filter="url(#glow)">
               <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
             </circle>
 
             <!-- Active Indicator (Ring when HUD is showing this planet) -->
-            <circle cx="640" cy="300" r="55.925127198341414" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
-               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2222222222222222;0.3333333333333333;1" dur="36s" repeatCount="indefinite" />
+            <circle cx="640" cy="300" r="35.83773044716594" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
+               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.3;1" dur="40s" repeatCount="indefinite" />
                <animateTransform attributeName="transform" type="rotate" from="0 640 300" to="360 640 300" dur="10s" repeatCount="indefinite" />
             </circle>
 
@@ -257,8 +253,8 @@
                   dur="22.727272727272727s" 
                   repeatCount="indefinite" 
               />
-              <text x="640" y="360.92512719834144" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
-                GuitarPedal
+              <text x="640" y="340.83773044716594" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
+                AI-Powered-Web-Scraper
               </text>
             </g>
           </g>
@@ -266,12 +262,12 @@
       </a>
     
 
-      <!-- Planet: test-tlb -->
-      <a href="https://github.com/torvalds/test-tlb" target="_blank" style="cursor: pointer;">
+      <!-- Planet: SQL_Tor -->
+      <a href="https://github.com/tr4m0ryp/SQL_Tor" target="_blank" style="cursor: pointer;">
         <defs>
           <radialGradient id="planetGrad-3" cx="30%" cy="30%" r="70%">
-            <stop offset="0%" stop-color="#808080" stop-opacity="1" />
-            <stop offset="50%" stop-color="#808080" stop-opacity="0.8" />
+            <stop offset="0%" stop-color="#3776AB" stop-opacity="1" />
+            <stop offset="50%" stop-color="#3776AB" stop-opacity="0.8" />
             <stop offset="100%" stop-color="#000" stop-opacity="1" />
           </radialGradient>
         </defs>
@@ -291,29 +287,27 @@
             />
             
             <!-- Planet Body (3D Effect) -->
-            <circle cx="700" cy="300" r="28.83331693749932" fill="url(#planetGrad-3)">
-               <title>test-tlb (C)</title>
+            <circle cx="700" cy="300" r="26.907755278982137" fill="url(#planetGrad-3)">
+               <title>SQL_Tor (Python)</title>
             </circle>
             
             <!-- Inner Rim Light (Atmosphere) -->
-            <circle cx="700" cy="300" r="28.83331693749932" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.3">
+            <circle cx="700" cy="300" r="26.907755278982137" fill="none" stroke="#00C2FF" stroke-width="2" opacity="0.3">
             </circle>
             
             <!-- Texture/Overlay -->
-            
-              <ellipse cx="700" cy="300" rx="46.133307099998916" ry="11.533326774999729" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" transform="rotate(-15, 700, 300)" />
             
             
             
             
             <!-- Mood Glow -->
-            <circle cx="700" cy="300" r="34.59998032499918" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.4" filter="url(#glow)">
+            <circle cx="700" cy="300" r="32.289306334778566" fill="none" stroke="#00C2FF" stroke-width="1" opacity="0.4" filter="url(#glow)">
               <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
             </circle>
 
             <!-- Active Indicator (Ring when HUD is showing this planet) -->
-            <circle cx="700" cy="300" r="38.83331693749932" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
-               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.3333333333333333;0.4444444444444444;1" dur="36s" repeatCount="indefinite" />
+            <circle cx="700" cy="300" r="36.90775527898214" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
+               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.3;0.4;1" dur="40s" repeatCount="indefinite" />
                <animateTransform attributeName="transform" type="rotate" from="0 700 300" to="360 700 300" dur="10s" repeatCount="indefinite" />
             </circle>
 
@@ -328,8 +322,8 @@
                   dur="20s" 
                   repeatCount="indefinite" 
               />
-              <text x="700" y="343.8333169374993" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
-                test-tlb
+              <text x="700" y="341.9077552789821" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
+                SQL_Tor
               </text>
             </g>
           </g>
@@ -337,12 +331,12 @@
       </a>
     
 
-      <!-- Planet: pesconvert -->
-      <a href="https://github.com/torvalds/pesconvert" target="_blank" style="cursor: pointer;">
+      <!-- Planet: Insta_Message_Deleter -->
+      <a href="https://github.com/tr4m0ryp/Insta_Message_Deleter" target="_blank" style="cursor: pointer;">
         <defs>
           <radialGradient id="planetGrad-4" cx="30%" cy="30%" r="70%">
-            <stop offset="0%" stop-color="#808080" stop-opacity="1" />
-            <stop offset="50%" stop-color="#808080" stop-opacity="0.8" />
+            <stop offset="0%" stop-color="#3776AB" stop-opacity="1" />
+            <stop offset="50%" stop-color="#3776AB" stop-opacity="0.8" />
             <stop offset="100%" stop-color="#000" stop-opacity="1" />
           </radialGradient>
         </defs>
@@ -362,29 +356,27 @@
             />
             
             <!-- Planet Body (3D Effect) -->
-            <circle cx="760" cy="300" r="28.49964003216865" fill="url(#planetGrad-4)">
-               <title>pesconvert (C)</title>
+            <circle cx="760" cy="300" r="27.19368581839511" fill="url(#planetGrad-4)">
+               <title>Insta_Message_Deleter (Python)</title>
             </circle>
             
             <!-- Inner Rim Light (Atmosphere) -->
-            <circle cx="760" cy="300" r="28.49964003216865" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.3">
+            <circle cx="760" cy="300" r="27.19368581839511" fill="none" stroke="#00C2FF" stroke-width="2" opacity="0.3">
             </circle>
             
             <!-- Texture/Overlay -->
-            
-              <ellipse cx="760" cy="300" rx="45.59942405146984" ry="11.39985601286746" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" transform="rotate(-15, 760, 300)" />
             
             
             
             
             <!-- Mood Glow -->
-            <circle cx="760" cy="300" r="34.19956803860238" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.4" filter="url(#glow)">
+            <circle cx="760" cy="300" r="32.63242298207413" fill="none" stroke="#00C2FF" stroke-width="1" opacity="0.4" filter="url(#glow)">
               <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
             </circle>
 
             <!-- Active Indicator (Ring when HUD is showing this planet) -->
-            <circle cx="760" cy="300" r="38.49964003216865" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
-               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.4444444444444444;0.5555555555555556;1" dur="36s" repeatCount="indefinite" />
+            <circle cx="760" cy="300" r="37.19368581839511" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
+               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.4;0.5;1" dur="40s" repeatCount="indefinite" />
                <animateTransform attributeName="transform" type="rotate" from="0 760 300" to="360 760 300" dur="10s" repeatCount="indefinite" />
             </circle>
 
@@ -399,8 +391,8 @@
                   dur="17.857142857142858s" 
                   repeatCount="indefinite" 
               />
-              <text x="760" y="343.49964003216866" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
-                pesconvert
+              <text x="760" y="342.1936858183951" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
+                Insta_Message_Deleter
               </text>
             </g>
           </g>
@@ -408,12 +400,12 @@
       </a>
     
 
-      <!-- Planet: 1590A -->
-      <a href="https://github.com/torvalds/1590A" target="_blank" style="cursor: pointer;">
+      <!-- Planet: GoogleMapsScraper_Spain -->
+      <a href="https://github.com/tr4m0ryp/GoogleMapsScraper_Spain" target="_blank" style="cursor: pointer;">
         <defs>
           <radialGradient id="planetGrad-5" cx="30%" cy="30%" r="70%">
-            <stop offset="0%" stop-color="#808080" stop-opacity="1" />
-            <stop offset="50%" stop-color="#808080" stop-opacity="0.8" />
+            <stop offset="0%" stop-color="#3776AB" stop-opacity="1" />
+            <stop offset="50%" stop-color="#3776AB" stop-opacity="0.8" />
             <stop offset="100%" stop-color="#000" stop-opacity="1" />
           </radialGradient>
         </defs>
@@ -433,29 +425,27 @@
             />
             
             <!-- Planet Body (3D Effect) -->
-            <circle cx="820" cy="300" r="47.884595981137615" fill="url(#planetGrad-5)">
-               <title>1590A (OpenSCAD)</title>
+            <circle cx="820" cy="300" r="29.273127360074948" fill="url(#planetGrad-5)">
+               <title>GoogleMapsScraper_Spain (Python)</title>
             </circle>
             
             <!-- Inner Rim Light (Atmosphere) -->
-            <circle cx="820" cy="300" r="47.884595981137615" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.3">
+            <circle cx="820" cy="300" r="29.273127360074948" fill="none" stroke="#00C2FF" stroke-width="2" opacity="0.3">
             </circle>
             
             <!-- Texture/Overlay -->
             
             
             
-               <path d="M815 295 L825 305 M822 292 L818 302" stroke="rgba(0,0,0,0.3)" stroke-width="1" />
-            
             
             <!-- Mood Glow -->
-            <circle cx="820" cy="300" r="57.461515177365136" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.4" filter="url(#glow)">
+            <circle cx="820" cy="300" r="35.12775283208994" fill="none" stroke="#00C2FF" stroke-width="1" opacity="0.4" filter="url(#glow)">
               <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
             </circle>
 
             <!-- Active Indicator (Ring when HUD is showing this planet) -->
-            <circle cx="820" cy="300" r="57.884595981137615" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
-               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.5555555555555556;0.6666666666666666;1" dur="36s" repeatCount="indefinite" />
+            <circle cx="820" cy="300" r="39.27312736007495" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
+               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.5;0.6;1" dur="40s" repeatCount="indefinite" />
                <animateTransform attributeName="transform" type="rotate" from="0 820 300" to="360 820 300" dur="10s" repeatCount="indefinite" />
             </circle>
 
@@ -470,8 +460,8 @@
                   dur="16.129032258064516s" 
                   repeatCount="indefinite" 
               />
-              <text x="820" y="362.88459598113764" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
-                1590A
+              <text x="820" y="344.27312736007497" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
+                GoogleMapsScraper_Spain
               </text>
             </g>
           </g>
@@ -479,12 +469,12 @@
       </a>
     
 
-      <!-- Planet: subsurface-for-dirk -->
-      <a href="https://github.com/torvalds/subsurface-for-dirk" target="_blank" style="cursor: pointer;">
+      <!-- Planet: SQLGuard -->
+      <a href="https://github.com/tr4m0ryp/SQLGuard" target="_blank" style="cursor: pointer;">
         <defs>
           <radialGradient id="planetGrad-6" cx="30%" cy="30%" r="70%">
-            <stop offset="0%" stop-color="#808080" stop-opacity="1" />
-            <stop offset="50%" stop-color="#808080" stop-opacity="0.8" />
+            <stop offset="0%" stop-color="#3776AB" stop-opacity="1" />
+            <stop offset="50%" stop-color="#3776AB" stop-opacity="0.8" />
             <stop offset="100%" stop-color="#000" stop-opacity="1" />
           </radialGradient>
         </defs>
@@ -504,29 +494,27 @@
             />
             
             <!-- Planet Body (3D Effect) -->
-            <circle cx="880" cy="300" r="55.86005668793387" fill="url(#planetGrad-6)">
-               <title>subsurface-for-dirk (C++)</title>
+            <circle cx="880" cy="300" r="31.213008854850106" fill="url(#planetGrad-6)">
+               <title>SQLGuard (Python)</title>
             </circle>
             
             <!-- Inner Rim Light (Atmosphere) -->
-            <circle cx="880" cy="300" r="55.86005668793387" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.3">
+            <circle cx="880" cy="300" r="31.213008854850106" fill="none" stroke="#00C2FF" stroke-width="2" opacity="0.3">
             </circle>
             
             <!-- Texture/Overlay -->
-            
-              <ellipse cx="880" cy="300" rx="89.37609070069419" ry="22.344022675173548" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" transform="rotate(-15, 880, 300)" />
             
             
             
             
             <!-- Mood Glow -->
-            <circle cx="880" cy="300" r="67.03206802552064" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.4" filter="url(#glow)">
+            <circle cx="880" cy="300" r="37.45561062582013" fill="none" stroke="#00C2FF" stroke-width="1" opacity="0.4" filter="url(#glow)">
               <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
             </circle>
 
             <!-- Active Indicator (Ring when HUD is showing this planet) -->
-            <circle cx="880" cy="300" r="65.86005668793388" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
-               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.6666666666666666;0.7777777777777778;1" dur="36s" repeatCount="indefinite" />
+            <circle cx="880" cy="300" r="41.2130088548501" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
+               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.6;0.7;1" dur="40s" repeatCount="indefinite" />
                <animateTransform attributeName="transform" type="rotate" from="0 880 300" to="360 880 300" dur="10s" repeatCount="indefinite" />
             </circle>
 
@@ -541,8 +529,8 @@
                   dur="14.705882352941176s" 
                   repeatCount="indefinite" 
               />
-              <text x="880" y="370.8600566879339" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
-                subsurface-for-dirk
+              <text x="880" y="346.2130088548501" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
+                SQLGuard
               </text>
             </g>
           </g>
@@ -550,12 +538,12 @@
       </a>
     
 
-      <!-- Planet: libdc-for-dirk -->
-      <a href="https://github.com/torvalds/libdc-for-dirk" target="_blank" style="cursor: pointer;">
+      <!-- Planet: Booking.com_Scraper_V2 -->
+      <a href="https://github.com/tr4m0ryp/Booking.com_Scraper_V2" target="_blank" style="cursor: pointer;">
         <defs>
           <radialGradient id="planetGrad-7" cx="30%" cy="30%" r="70%">
-            <stop offset="0%" stop-color="#808080" stop-opacity="1" />
-            <stop offset="50%" stop-color="#808080" stop-opacity="0.8" />
+            <stop offset="0%" stop-color="#3776AB" stop-opacity="1" />
+            <stop offset="50%" stop-color="#3776AB" stop-opacity="0.8" />
             <stop offset="100%" stop-color="#000" stop-opacity="1" />
           </radialGradient>
         </defs>
@@ -575,29 +563,27 @@
             />
             
             <!-- Planet Body (3D Effect) -->
-            <circle cx="940" cy="300" r="44.68292812371329" fill="url(#planetGrad-7)">
-               <title>libdc-for-dirk (C)</title>
+            <circle cx="940" cy="300" r="28.317766166719345" fill="url(#planetGrad-7)">
+               <title>Booking.com_Scraper_V2 (Python)</title>
             </circle>
             
             <!-- Inner Rim Light (Atmosphere) -->
-            <circle cx="940" cy="300" r="44.68292812371329" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.3">
+            <circle cx="940" cy="300" r="28.317766166719345" fill="none" stroke="#00C2FF" stroke-width="2" opacity="0.3">
             </circle>
             
             <!-- Texture/Overlay -->
-            
-              <ellipse cx="940" cy="300" rx="71.49268499794127" ry="17.873171249485317" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" transform="rotate(-15, 940, 300)" />
             
             
             
             
             <!-- Mood Glow -->
-            <circle cx="940" cy="300" r="53.619513748455944" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.4" filter="url(#glow)">
+            <circle cx="940" cy="300" r="33.981319400063214" fill="none" stroke="#00C2FF" stroke-width="1" opacity="0.4" filter="url(#glow)">
               <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
             </circle>
 
             <!-- Active Indicator (Ring when HUD is showing this planet) -->
-            <circle cx="940" cy="300" r="54.68292812371329" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
-               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.7777777777777778;0.8888888888888888;1" dur="36s" repeatCount="indefinite" />
+            <circle cx="940" cy="300" r="38.317766166719345" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
+               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.7;0.8;1" dur="40s" repeatCount="indefinite" />
                <animateTransform attributeName="transform" type="rotate" from="0 940 300" to="360 940 300" dur="10s" repeatCount="indefinite" />
             </circle>
 
@@ -612,8 +598,8 @@
                   dur="13.513513513513514s" 
                   repeatCount="indefinite" 
               />
-              <text x="940" y="359.6829281237133" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
-                libdc-for-dirk
+              <text x="940" y="343.31776616671937" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
+                Booking.com_Scraper_V2
               </text>
             </g>
           </g>
@@ -621,12 +607,12 @@
       </a>
     
 
-      <!-- Planet: libgit2 -->
-      <a href="https://github.com/torvalds/libgit2" target="_blank" style="cursor: pointer;">
+      <!-- Planet: Booking.com_Scraper -->
+      <a href="https://github.com/tr4m0ryp/Booking.com_Scraper" target="_blank" style="cursor: pointer;">
         <defs>
           <radialGradient id="planetGrad-8" cx="30%" cy="30%" r="70%">
-            <stop offset="0%" stop-color="#808080" stop-opacity="1" />
-            <stop offset="50%" stop-color="#808080" stop-opacity="0.8" />
+            <stop offset="0%" stop-color="#3776AB" stop-opacity="1" />
+            <stop offset="50%" stop-color="#3776AB" stop-opacity="0.8" />
             <stop offset="100%" stop-color="#000" stop-opacity="1" />
           </radialGradient>
         </defs>
@@ -646,29 +632,27 @@
             />
             
             <!-- Planet Body (3D Effect) -->
-            <circle cx="1000" cy="300" r="53.141602005348" fill="url(#planetGrad-8)">
-               <title>libgit2 (C)</title>
+            <circle cx="1000" cy="300" r="29.133567313170268" fill="url(#planetGrad-8)">
+               <title>Booking.com_Scraper (Python)</title>
             </circle>
             
             <!-- Inner Rim Light (Atmosphere) -->
-            <circle cx="1000" cy="300" r="53.141602005348" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.3">
+            <circle cx="1000" cy="300" r="29.133567313170268" fill="none" stroke="#00C2FF" stroke-width="2" opacity="0.3">
             </circle>
             
             <!-- Texture/Overlay -->
             
             
             
-               <path d="M995 295 L1005 305 M1002 292 L998 302" stroke="rgba(0,0,0,0.3)" stroke-width="1" />
-            
             
             <!-- Mood Glow -->
-            <circle cx="1000" cy="300" r="63.76992240641759" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.4" filter="url(#glow)">
+            <circle cx="1000" cy="300" r="34.96028077580432" fill="none" stroke="#00C2FF" stroke-width="1" opacity="0.4" filter="url(#glow)">
               <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
             </circle>
 
             <!-- Active Indicator (Ring when HUD is showing this planet) -->
-            <circle cx="1000" cy="300" r="63.141602005348" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
-               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.8888888888888888;1;1" dur="36s" repeatCount="indefinite" />
+            <circle cx="1000" cy="300" r="39.13356731317027" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
+               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.8;0.9;1" dur="40s" repeatCount="indefinite" />
                <animateTransform attributeName="transform" type="rotate" from="0 1000 300" to="360 1000 300" dur="10s" repeatCount="indefinite" />
             </circle>
 
@@ -683,8 +667,77 @@
                   dur="12.5s" 
                   repeatCount="indefinite" 
               />
-              <text x="1000" y="368.141602005348" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
-                libgit2
+              <text x="1000" y="344.13356731317026" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
+                Booking.com_Scraper
+              </text>
+            </g>
+          </g>
+        </g>
+      </a>
+    
+
+      <!-- Planet: Email_Scraper -->
+      <a href="https://github.com/tr4m0ryp/Email_Scraper" target="_blank" style="cursor: pointer;">
+        <defs>
+          <radialGradient id="planetGrad-9" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#3776AB" stop-opacity="1" />
+            <stop offset="50%" stop-color="#3776AB" stop-opacity="0.8" />
+            <stop offset="100%" stop-color="#000" stop-opacity="1" />
+          </radialGradient>
+        </defs>
+        <g>
+          <!-- Orbit Path -->
+          <circle cx="400" cy="300" r="660" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+          
+          <!-- Orbiting Group -->
+          <g>
+            <animateTransform 
+              attributeName="transform" 
+              type="rotate" 
+              from="0 400 300" 
+              to="360 400 300" 
+              dur="11.627906976744185s" 
+              repeatCount="indefinite" 
+            />
+            
+            <!-- Planet Body (3D Effect) -->
+            <circle cx="1060" cy="300" r="27.19368581839511" fill="url(#planetGrad-9)">
+               <title>Email_Scraper (Python)</title>
+            </circle>
+            
+            <!-- Inner Rim Light (Atmosphere) -->
+            <circle cx="1060" cy="300" r="27.19368581839511" fill="none" stroke="#00C2FF" stroke-width="2" opacity="0.3">
+            </circle>
+            
+            <!-- Texture/Overlay -->
+            
+            
+            
+            
+            <!-- Mood Glow -->
+            <circle cx="1060" cy="300" r="32.63242298207413" fill="none" stroke="#00C2FF" stroke-width="1" opacity="0.4" filter="url(#glow)">
+              <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
+            </circle>
+
+            <!-- Active Indicator (Ring when HUD is showing this planet) -->
+            <circle cx="1060" cy="300" r="37.19368581839511" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity="0">
+               <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.9;1;1" dur="40s" repeatCount="indefinite" />
+               <animateTransform attributeName="transform" type="rotate" from="0 1060 300" to="360 1060 300" dur="10s" repeatCount="indefinite" />
+            </circle>
+
+            <!-- Hover Label (Counter-Rotated to stay upright) -->
+            <g opacity="0">
+              <set attributeName="opacity" to="1" begin="mouseover" end="mouseout" />
+              <animateTransform 
+                  attributeName="transform" 
+                  type="rotate" 
+                  from="360 1060 300" 
+                  to="0 1060 300" 
+                  dur="11.627906976744185s" 
+                  repeatCount="indefinite" 
+              />
+              <text x="1060" y="342.1936858183951" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" style="text-shadow: 0px 0px 4px black;">
+                Email_Scraper
               </text>
             </g>
           </g>
@@ -699,15 +752,15 @@
   
       <g opacity="0">
         <!-- Visibility Animation -->
-        <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.1101111111111111; 0.1111111111111111; 1" dur="36s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.099; 0.1; 1" dur="40s" repeatCount="indefinite" />
 
         <!-- Panel Content -->
-        <text x="20" y="520" fill="#FFD700" font-family="Courier New, monospace" font-size="16" font-weight="bold">> linux</text>
-        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: C | STARS: 210264</text>
-        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: HAPPY | SIZE: 5766301kb</text>
+        <text x="20" y="520" fill="#00C2FF" font-family="Courier New, monospace" font-size="16" font-weight="bold">> DataScraper_GoogleMaps</text>
+        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: Python | STARS: 10</text>
+        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: CALM | SIZE: 11kb</text>
         
         <!-- Progress Bar -->
-        <rect x="20" y="565" width="0" height="2" fill="#FFD700">
+        <rect x="20" y="565" width="0" height="2" fill="#00C2FF">
             <animate attributeName="width" values="0;200" begin="0s" dur="4s" fill="freeze" />
         </rect>
       </g>
@@ -715,15 +768,15 @@
 
       <g opacity="0">
         <!-- Visibility Animation -->
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.1111111111111111; 0.1121111111111111; 0.2212222222222222; 0.2222222222222222; 1" dur="36s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.1; 0.101; 0.199; 0.2; 1" dur="40s" repeatCount="indefinite" />
 
         <!-- Panel Content -->
-        <text x="20" y="520" fill="#FFD700" font-family="Courier New, monospace" font-size="16" font-weight="bold">> uemacs</text>
-        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: C | STARS: 1769</text>
-        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: HAPPY | SIZE: 438kb</text>
+        <text x="20" y="520" fill="#FF00E6" font-family="Courier New, monospace" font-size="16" font-weight="bold">> Bulk_Email_Sender</text>
+        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: N/A | STARS: 9</text>
+        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: ENERGETIC | SIZE: 0kb</text>
         
         <!-- Progress Bar -->
-        <rect x="20" y="565" width="0" height="2" fill="#FFD700">
+        <rect x="20" y="565" width="0" height="2" fill="#FF00E6">
             <animate attributeName="width" values="0;200" begin="4s" dur="4s" fill="freeze" />
         </rect>
       </g>
@@ -731,15 +784,15 @@
 
       <g opacity="0">
         <!-- Visibility Animation -->
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.2222222222222222; 0.2232222222222222; 0.3323333333333333; 0.3333333333333333; 1" dur="36s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.2; 0.201; 0.299; 0.3; 1" dur="40s" repeatCount="indefinite" />
 
         <!-- Panel Content -->
-        <text x="20" y="520" fill="#FFD700" font-family="Courier New, monospace" font-size="16" font-weight="bold">> GuitarPedal</text>
-        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: OpenSCAD | STARS: 1394</text>
-        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: HAPPY | SIZE: 5663kb</text>
+        <text x="20" y="520" fill="#00C2FF" font-family="Courier New, monospace" font-size="16" font-weight="bold">> AI-Powered-Web-Scraper</text>
+        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: Python | STARS: 9</text>
+        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: CALM | SIZE: 7kb</text>
         
         <!-- Progress Bar -->
-        <rect x="20" y="565" width="0" height="2" fill="#FFD700">
+        <rect x="20" y="565" width="0" height="2" fill="#00C2FF">
             <animate attributeName="width" values="0;200" begin="8s" dur="4s" fill="freeze" />
         </rect>
       </g>
@@ -747,15 +800,15 @@
 
       <g opacity="0">
         <!-- Visibility Animation -->
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3333333333333333; 0.3343333333333333; 0.4434444444444444; 0.4444444444444444; 1" dur="36s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3; 0.301; 0.399; 0.4; 1" dur="40s" repeatCount="indefinite" />
 
         <!-- Panel Content -->
-        <text x="20" y="520" fill="#FFD700" font-family="Courier New, monospace" font-size="16" font-weight="bold">> test-tlb</text>
-        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: C | STARS: 912</text>
-        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: HAPPY | SIZE: 19kb</text>
+        <text x="20" y="520" fill="#00C2FF" font-family="Courier New, monospace" font-size="16" font-weight="bold">> SQL_Tor</text>
+        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: Python | STARS: 7</text>
+        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: CALM | SIZE: 10kb</text>
         
         <!-- Progress Bar -->
-        <rect x="20" y="565" width="0" height="2" fill="#FFD700">
+        <rect x="20" y="565" width="0" height="2" fill="#00C2FF">
             <animate attributeName="width" values="0;200" begin="12s" dur="4s" fill="freeze" />
         </rect>
       </g>
@@ -763,15 +816,15 @@
 
       <g opacity="0">
         <!-- Visibility Animation -->
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.4444444444444444; 0.4454444444444444; 0.5545555555555556; 0.5555555555555556; 1" dur="36s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.4; 0.401; 0.499; 0.5; 1" dur="40s" repeatCount="indefinite" />
 
         <!-- Panel Content -->
-        <text x="20" y="520" fill="#FFD700" font-family="Courier New, monospace" font-size="16" font-weight="bold">> pesconvert</text>
-        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: C | STARS: 531</text>
-        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: HAPPY | SIZE: 17kb</text>
+        <text x="20" y="520" fill="#00C2FF" font-family="Courier New, monospace" font-size="16" font-weight="bold">> Insta_Message_Deleter</text>
+        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: Python | STARS: 4</text>
+        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: CALM | SIZE: 11kb</text>
         
         <!-- Progress Bar -->
-        <rect x="20" y="565" width="0" height="2" fill="#FFD700">
+        <rect x="20" y="565" width="0" height="2" fill="#00C2FF">
             <animate attributeName="width" values="0;200" begin="16s" dur="4s" fill="freeze" />
         </rect>
       </g>
@@ -779,15 +832,15 @@
 
       <g opacity="0">
         <!-- Visibility Animation -->
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.5555555555555556; 0.5565555555555556; 0.6656666666666666; 0.6666666666666666; 1" dur="36s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.5; 0.501; 0.599; 0.6; 1" dur="40s" repeatCount="indefinite" />
 
         <!-- Panel Content -->
-        <text x="20" y="520" fill="#FFD700" font-family="Courier New, monospace" font-size="16" font-weight="bold">> 1590A</text>
-        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: OpenSCAD | STARS: 513</text>
-        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: HAPPY | SIZE: 10882kb</text>
+        <text x="20" y="520" fill="#00C2FF" font-family="Courier New, monospace" font-size="16" font-weight="bold">> GoogleMapsScraper_Spain</text>
+        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: Python | STARS: 4</text>
+        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: CALM | SIZE: 22kb</text>
         
         <!-- Progress Bar -->
-        <rect x="20" y="565" width="0" height="2" fill="#FFD700">
+        <rect x="20" y="565" width="0" height="2" fill="#00C2FF">
             <animate attributeName="width" values="0;200" begin="20s" dur="4s" fill="freeze" />
         </rect>
       </g>
@@ -795,15 +848,15 @@
 
       <g opacity="0">
         <!-- Visibility Animation -->
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6666666666666666; 0.6676666666666666; 0.7767777777777778; 0.7777777777777778; 1" dur="36s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6; 0.601; 0.699; 0.7; 1" dur="40s" repeatCount="indefinite" />
 
         <!-- Panel Content -->
-        <text x="20" y="520" fill="#FFD700" font-family="Courier New, monospace" font-size="16" font-weight="bold">> subsurface-for-dirk</text>
-        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: C++ | STARS: 421</text>
-        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: HAPPY | SIZE: 155337kb</text>
+        <text x="20" y="520" fill="#00C2FF" font-family="Courier New, monospace" font-size="16" font-weight="bold">> SQLGuard</text>
+        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: Python | STARS: 4</text>
+        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: CALM | SIZE: 42kb</text>
         
         <!-- Progress Bar -->
-        <rect x="20" y="565" width="0" height="2" fill="#FFD700">
+        <rect x="20" y="565" width="0" height="2" fill="#00C2FF">
             <animate attributeName="width" values="0;200" begin="24s" dur="4s" fill="freeze" />
         </rect>
       </g>
@@ -811,15 +864,15 @@
 
       <g opacity="0">
         <!-- Visibility Animation -->
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7777777777777778; 0.7787777777777778; 0.8878888888888888; 0.8888888888888888; 1" dur="36s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7; 0.701; 0.799; 0.8; 1" dur="40s" repeatCount="indefinite" />
 
         <!-- Panel Content -->
-        <text x="20" y="520" fill="#FFD700" font-family="Courier New, monospace" font-size="16" font-weight="bold">> libdc-for-dirk</text>
-        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: C | STARS: 359</text>
-        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: HAPPY | SIZE: 3743kb</text>
+        <text x="20" y="520" fill="#00C2FF" font-family="Courier New, monospace" font-size="16" font-weight="bold">> Booking.com_Scraper_V2</text>
+        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: Python | STARS: 4</text>
+        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: CALM | SIZE: 16kb</text>
         
         <!-- Progress Bar -->
-        <rect x="20" y="565" width="0" height="2" fill="#FFD700">
+        <rect x="20" y="565" width="0" height="2" fill="#00C2FF">
             <animate attributeName="width" values="0;200" begin="28s" dur="4s" fill="freeze" />
         </rect>
       </g>
@@ -827,16 +880,32 @@
 
       <g opacity="0">
         <!-- Visibility Animation -->
-        <animate attributeName="opacity" values="0; 0; 1; 1" keyTimes="0; 0.8888888888888888; 0.8898888888888888; 1" dur="36s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8; 0.801; 0.899; 0.9; 1" dur="40s" repeatCount="indefinite" />
 
         <!-- Panel Content -->
-        <text x="20" y="520" fill="#FFD700" font-family="Courier New, monospace" font-size="16" font-weight="bold">> libgit2</text>
-        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: C | STARS: 309</text>
-        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: HAPPY | SIZE: 62768kb</text>
+        <text x="20" y="520" fill="#00C2FF" font-family="Courier New, monospace" font-size="16" font-weight="bold">> Booking.com_Scraper</text>
+        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: Python | STARS: 4</text>
+        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: CALM | SIZE: 21kb</text>
         
         <!-- Progress Bar -->
-        <rect x="20" y="565" width="0" height="2" fill="#FFD700">
+        <rect x="20" y="565" width="0" height="2" fill="#00C2FF">
             <animate attributeName="width" values="0;200" begin="32s" dur="4s" fill="freeze" />
+        </rect>
+      </g>
+    
+
+      <g opacity="0">
+        <!-- Visibility Animation -->
+        <animate attributeName="opacity" values="0; 0; 1; 1" keyTimes="0; 0.9; 0.901; 1" dur="40s" repeatCount="indefinite" />
+
+        <!-- Panel Content -->
+        <text x="20" y="520" fill="#00C2FF" font-family="Courier New, monospace" font-size="16" font-weight="bold">> Email_Scraper</text>
+        <text x="20" y="540" fill="#ccc" font-family="Courier New, monospace" font-size="12">LANG: Python | STARS: 4</text>
+        <text x="20" y="555" fill="#ccc" font-family="Courier New, monospace" font-size="12">MOOD: CALM | SIZE: 11kb</text>
+        
+        <!-- Progress Bar -->
+        <rect x="20" y="565" width="0" height="2" fill="#00C2FF">
+            <animate attributeName="width" values="0;200" begin="36s" dur="4s" fill="freeze" />
         </rect>
       </g>
     
@@ -847,6 +916,6 @@
   <!-- Top-Right User Badge -->
   <g transform="translate(730, 20)">
     <circle cx="25" cy="25" r="27" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
-    <image href="https://avatars.githubusercontent.com/u/1024025?v=4" xlink:href="https://avatars.githubusercontent.com/u/1024025?v=4" x="0" y="0" height="50" width="50" clip-path="url(#badgeClip)" />
+    <image href="https://avatars.githubusercontent.com/u/175369445?v=4" xlink:href="https://avatars.githubusercontent.com/u/175369445?v=4" x="0" y="0" height="50" width="50" clip-path="url(#badgeClip)" />
   </g>
 </svg>
